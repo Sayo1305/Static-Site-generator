@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../style.css">
+      <script src="../scripts/brain.js" defer></script>
+      <title>Form</title>
+</head>
+<body>
+      <div class="formcontainer">
+            <img class="MainBg" src="/images/bg3.jpg" alt="bg" />
+            <form class="FormDivContainer" id="form">
+              <div class="formcontainerInputDiv">
+                <label class="formcontainerInputLabel">Enter Your Name</label>
+                <input id="name" class="formcontainerInputTag" type="text" placeholder="Enter Your Name" />
+              </div>
+              <div class="formcontainerInputDiv">
+                <label class="formcontainerInputLabel">Enter the Introduction about Yourself</label>
+                <textarea id="introduction" placeholder="Introduction" class="formcontainerInputTag"></textarea>
+              </div>
+              <div class="formcontainerInputDiv">
+                <label class="formcontainerInputLabel">Enter Your Github Link</label>
+                <input id="GithubLink" class="formcontainerInputTag" type="text" placeholder="Enter URL" />
+              </div>
+              <div class="formcontainerInputDiv">
+                <label class="formcontainerInputLabel">Enter Your Twitter Link</label>
+                <input id="TwitterLink" class="formcontainerInputTag" type="text" placeholder="Enter URL" />
+              </div>
+              <div class="formcontainerInputDiv">
+                <label class="formcontainerInputLabel">Enter Your IMAGE URL</label>
+                <input id="imgLink" class="formcontainerInputTag" type="text" placeholder="Enter URL" />
+              </div>
+              <div class="formcontainerInputDiv">
+                <label class="formcontainerInputLabel">Enter Your Email</label>
+                <input id="email" class="formcontainerInputTag" type="text" placeholder="Enter URL" />
+              </div>
+              <div class="formcontainerInputDiv">
+                <label class="formcontainerInputLabel" for ="template">Select the template</label>
+                <select  title="cars" class="formcontainerInputTag" name="cars" id="cars">
+                  <option value="none" selected disabled hidden>Select an Option</option>
+                  <optgroup label="Template">
+                    <option value="TemplateA">TemplateA</option>
+                    <option value="TemplateB">TemplateB</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div style="margin: 0 auto;">
+                  <button type="submit" class="MainPageButton" >Submit</button>
+              </div>
+            </form>
+            <form class="FormDivContainer" id="form2">
+              <div class="form2head">Advanced Option</div>
+              <div class="formcontainerInputDivCh">
+                <label class="formcontainerInputLabel">profile picture</label>
+                <select  title="cars" class="formcontainerInputTag" name="disable_pic" id="disable_pic">
+                  <option value="none" selected disabled hidden>Select an Option</option>
+                  <option value="Enable">Enable</option>
+                  <option value="Disable">Disable</option>
+                </select>
+              </div>
+              <div class="formcontainerInputDivCh">
+                <label class="formcontainerInputLabel">Disable Social Media Links</label>
+                <select  title="cars" class="formcontainerInputTag" name="disable_media" id="disable_media">
+                  <option value="none" selected disabled hidden>Select an Option</option>
+                  <option value="Enable">Enable</option>
+                  <option value="Disable">Disable</option>
+                </select>
+              </div>
+              <div class="formcontainerInputDivCh">
+                <label class="formcontainerInputLabel">Enable custom Color Option</label>
+                <select  title="cars" class="formcontainerInputTag" name="Color_enable" id="Color_enable">
+                  <option value="none" selected disabled hidden>Select an Option</option>
+                  <option value="Enable">Enable</option>
+                  <option value="Disable">Disable</option>
+                </select>
+              </div>
+              <div class="formcontainerInputDivCh">
+                <label class="formcontainerInputLabel"> Select the font</label>
+                  <select class="formcontainerInputTag"  id="select_font">
+                    <option value="none" selected disabled hidden>Select an Option or Default</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Sans Serif">Sans Serif</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                    <option value="Arial Black">Arial Black</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Bookman">Bookman</option>
+                    <option value="Garamond">Garamond</option>
+                    <option value="Palatino">Palatino</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
+              </div>
+              <div class="formcontainerInputDivCh colordiv">
+                <label class="formcontainerInputLabel">Enter the primary color</label>
+                <input name="Color Picker" id="prime_color" type="color"/>
+              </div>
+              <div class="formcontainerInputDivCh colordiv">
+                <label class="formcontainerInputLabel">Enter the Secondary color</label>
+                <input name="Color Picker" id="secon_color" type="color"/>
+              </div>
+              <div style="margin: 0 auto;">
+                  <button type="submit"  id = "submit2" class="MainPageButton" >Submit</button>
+              </div>
+            </form>
+          </div>
+</body>
+</html>

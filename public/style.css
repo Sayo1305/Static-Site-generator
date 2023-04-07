@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos&family=Roboto&family=Rubik+Iso&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.MainContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.MainBg {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: linear-gradient(to top, #000000d8, #0000, #0000);
+}
+.MainPageCont,
+.templateshowContainer ,.formcontainer{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.MainPageHead {
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Genos", sans-serif;
+  color: #fff;
+  text-shadow: #000 2px 2px 2px;
+}
+.MainPageHead span {
+  color: #000000;
+  text-shadow: #fff 2px 2px 2px;
+}
+.MainPageText {
+  font-size: 1.2rem;
+  color: #fff;
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: justify;
+}
+.MainPageButton {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Genos", sans-serif;
+  background: rgb(52, 216, 15);
+}
+.CardTemplateShow,.FormDivContainer{
+  width: 50%;
+  height: 400px;
+  z-index: 10;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+}
+.templateshowText{
+      z-index: 10;
+      font-weight: 700;
+      font-size: 2.5rem;
+}
+.templateshowContainer{
+      background: linear-gradient(374deg , #454B66 , #677DB7 , #B84A62 , #9CA3DB);
+}
+.FormDivContainer{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  align-items: flex-start;
+}
+.formcontainerInputDiv{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.formcontainerInputLabel{
+  font-family: "Genos", sans-serif;
+  font-weight: 800;
+  width: 100%;
+  font-size: 1.3rem;
+}
+.formcontainerInputTag{
+  width: 100%;
+  outline: none;
+  border: 1px #000 solid;
+  border-radius: 5px;padding: 5px;
+  font-size: 1.3rem;
+  background: #b2c9de;
+}
+
+.st1{
+  width: 100%;
+  background: #677DB7;
+}
+.CardTemplateShow{
+  width: 80%;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.CardTemplateA{
+  width: 50%;
+  height: 100%;
+}
+.navbar{
+  display: flex;
+  width: 100%;
+  background: rgba(167, 167, 167, 0.234);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.721);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px); 
+  padding: 10px;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 20;
+}
+.navbarlogo{
+  color: #fff;
+  font-weight: 700;
+}
+.form2head{
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  font-family: "Genos", sans-serif;
+  font-weight: 700;
+}
+#form2{
+  display: none;
+}
+.colordiv{
+  display: none !important;
+}
+.invis{
+  display: flex !important;
+}
+.formcontainerInputDivCh{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
